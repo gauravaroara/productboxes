@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  width: 400px;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  text-align: center;
+  color: #ff5c8d;
+  font-weight: bold;
+  position: relative;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 27%;
+  height: 1px;
+  background: #ccc;
+}
+
+h2::before {
+  left: 0;
+}
+
+h2::after {
+  right: 0;
+}
+
+.box {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.box.active {
+  border-color: #ff5c8d;
+  background: #fff0f5;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio-label input {
+  margin-right: 10px;
+}
+
+.discount {
+  background: #ff5c8d;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.strike {
+  display: block;
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.standard-price{
+  padding-left: 32px;
+}
+
+.most-popular {
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  background: #ff5c8d;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.options {
+  margin-top: 10px;
+  padding-left: 32px;
+}
+
+.option-title{
+  position: relative;
+  left: 31px;
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  margin-bottom: 10px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.option-number {
+  width: 20px;
+}
+
+select{
+  width: 76px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.summary .left {
+  color: #ff5c8d;
+}
+
+.btn {
+  margin-top: 20px;
+  background: #ff5c8d;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.powered {
+  text-align: right;
+  margin-top: 1rem;
+  color: #aaa;
+  font-size: 0.8rem;
+}
